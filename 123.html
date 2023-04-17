@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+<meta charset="UTF-8">
+<title>選單</title>
+<meta name ="description" content="選單">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+.container {
+            margin: 0 auto;
+			
+			
+		}
+
+.logo{
+		display: inline-block;
+	float: left;
+
+}
+.menu{
+	flex-basis: 50%;
+	
+	float: right;
+}
+
+
+nav {
+	background-color: white;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	display:inline-block;
+	background-color: white;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+	}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 100%; 
+}
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+nav ul ul li {
+	width: 200px;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:200px;
+}
+
+li > a:after { content:  ' ▼'; }
+li > a:only-child:after { content: ''; }
+
+@media screen and (max-width : 768px){
+.logo{
+	width:100%;
+	display: block;
+	text-align:center;
+	
+}
+
+
+.menu{
+	float:right;
+	display: block;
+	
+}
+
+
+
+nav {
+	background-color: white;
+}
+
+nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+	}
+
+nav ul li {
+	display:inline-block;
+	background-color: white;
+	}
+
+nav a {
+	display:block;
+	padding:0 10px;	
+	color:black;
+	font-size:20px;
+	line-height: 60px;
+	text-decoration:none;
+	}
+
+nav ul ul {
+	display: none;
+	position: absolute; 
+	top: 100%; 
+
+
+}
+
+nav ul li:hover > ul {
+	display:inherit;
+}
+
+nav ul ul li {
+	width: 100%;
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+nav ul ul ul li {
+	position: relative;
+	top:-60px;
+	left:200px;
+}
+
+li > a:after { content:  ' ▼'; }
+li > a:only-child:after { content: ''; }
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<div class="container">
+<div class="logo">
+	<img  src="https://github.com/tsong9527/image/blob/main/1681700193360.png?raw=true">
+</div>
+<div class="menu">
+	<nav>
+		<ul>
+			<li><a href="#">黑人</a></li>
+			<li><a href="#">同性戀</a>
+                 <ul>
+					<li><a href="#">死GAY</a></li>
+					<li><a href="#">黑人都該死</a></li>
+					<li><a href="#">一群死彩虹</a></li>
+				</ul>
+
+			</li>
+			<li><a href="#">外勞</a>
+				<ul>
+					<li><a href="#">死外勞</a></li>
+					<li><a href="#">噴一堆噁心香水</a></li>
+					<li><a href="#">中壢街頭仔</a></li>
+				</ul>
+			</li>
+			<li><a href="#">看完準備下地獄</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+</body>
+</html>
